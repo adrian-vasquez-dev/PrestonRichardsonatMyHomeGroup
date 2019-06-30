@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <title>Preston Richardson at MyHomeGroup</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+  <a href="index.html" class="active"><img class="img-logo-mhg" src="images/mhgBlack.png"></a> 
+  <div class="dropdown">
+    <button class="dropbtn">
+      <a href="http://prestonrichardson.agentsquared.com">buy</a>
+    </button>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">
+      <a href="index.html#container-sell">sell</a>
+    </button>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">
+      <a href="">communities</a>
+    </button>
+    <div class="dropdown-content">
+        <a href="http://prestonrichardson.agentsquared.com/search-results?Search=north+phoenix" target="_blank">north phoenix</a>
+        <a href="http://prestonrichardson.agentsquared.com/search-results?Search=central+phoenix" target="_blank">central phoenix</a>
+        <a href="http://prestonrichardson.agentsquared.com/search-results?Search=downtown+phoenix" target="_blank">downtown phoenix</a>
+        <a href="http://prestonrichardson.agentsquared.com/search-results?Search=scottsdale" target="_blank">scottsdale</a>
+        <a href="http://prestonrichardson.agentsquared.com/search-results?Search=tempe" target="_blank">tempe</a>
+        <a href="http://prestonrichardson.agentsquared.com/search-results?Search=arcadia" target="_blank">arcadia</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">
+      <a href="my-story.html">my story</a>
+    </button>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">
+      <a href="blog.html">blog</a>
+    </button>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">
+      <a href="index.html#container-contact">contact</a>
+    </button>
+  </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> 
+</div>
+
+<div class="container-search">
+    <div class="text-wrapper">
+        <h1>Your dream home is a click away</h1>
+        <form onsubmit="mySearch(); return false; ">
+            <input id="searchbar" type="text" id="search-query" placeholder="Search by Address, City or Zipcode">
+        </form>
+    </div>
+</div>
+
+<div id="container-sell">
+    <div id="text-sell">
+        <h1>looking to sell?</h1>
+        <h2>Ever wonder what your home is worth or what homes are going for in an area? Message me for a FREE market analysis.</h2>
+        <button class="uppercase"><a href="index.html#contact-link">request a home valuation</a></button>
+    </div>
+</div>
+
+<div id="container-meetme">
+    <h1>meet me</h1>
+    <div class="grid">
+    <div id="img-meetme"></div>
+        <div id="text-meetme">
+        <h1>Preston Richardson</h1>
+        <p>Realtor</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button class="uppercase"><a href="my-story.html">my story</a></button>
+        <button class="uppercase"><a href="index.html#contact-link">contact</a></button>
+        </div>
+    </div>
+</div>
+
+
+<div id="container-insta">
+    <h1>Find me on Instagram</h1>
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+    <iframe src="https://snapwidget.com/embed/704617" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;padding:50px; "></iframe>
+    <div style="font:10px/14px 'Roboto','Helvetica Neue',Arial,Helvetica,sans-serif;font-weight:400;width:100%;padding:50px;text-align:right"></div>
+</div>
+
+<div id="container-contact">
+    <h1>contact</h1>
+    <div class="grid contact-info">
+        <div>
+            <p><i class="fas fa-directions"></i> 8360 E Raintree Drive, Scottsdale, AZ, 85260</p>
+            <br>
+            <p><i class="fas fa-phone"></i> Phone: (317) 586-0334</p>
+            <br>
+            <p><i class="fas fa-envelope"></i> Email: prestonrichardsonrealtor@gmail.com</p> 
+        </div>
+
+        <div>
+            <form>
+                <p>first name*</p>
+                <input type="text" name="firstname">
+                <p>last name*</p>
+                <input type="text" name="lastname">
+                <p>email*</p>
+                <input type="text" name="email">
+                <p>subject*</p>
+                <input type="text" name="subject">
+                <p>message*</p>
+                <textarea name="message"></textarea>
+                <input type="submit" name="submit" value="submit">
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<footer class="grid">
+  <div id="quicklinks">
+    <p>Quick Links</p>
+    <p><a href="http://prestonrichardson.agentsquared.com">buy</a></p>
+    <p><a href="index.html#container-sell">sell</a></p>
+    <p><a href="my-story.html">my story</a></p>
+    <p><a href="blog.html">blog</a></p>
+    <p><a href="index.html#container-contact">contact</a></p>
+  </div>  
+  <div id="contact">
+    <p>My Home Group</p>
+    <p>8360 E Raintree Dr</p>
+    <p>Scottsdale, AZ, 85260</p>
+    <p>Phone: (317) 586-0334</p>
+    <p>Email: prestonrichardsonrealtor@gmail.com</p>
+    <a href="https://www.instagram.com/prestonrichardsonrealtor/"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/preston.richardson.313"><i class="fab fa-facebook-f"></i></a>
+    <a href="mailto:prestonrichardsonrealtor@gmail.com" target="_top"><i class="far fa-envelope"></i></a>
+  </div>
+</footer>
+
+</html>
