@@ -1,0 +1,173 @@
+
+<!-- saved from url=(0014)about:internet -->
+
+<head>
+    <title>Preston Richardson at MyHomeGroup</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <?php
+    if(isset($_POST['sendmail'])) {
+      $headers = "From: webmaster@example.com";
+
+      mail('advas14@gmail.com',
+        $_POST['subject'],
+        "Dear Mr.Richardson,\n\n{$_POST['message']}\n\nSincerely,\n{$_POST['first-name']} {$_POST['last-name']}\n{$_POST['email']}");
+    }       
+  ?>
+
+    <div class="topnav" id="myTopnav">
+  <a href="index.html" class="active"><img class="img-logo-mhg" alt="MyHomeGroup"src="images/mhg.png"></a> 
+  <div class="dropdown">
+    <p class="dropbtn">
+      <a href="http://prestonrichardson.agentsquared.com" target="_blank">buy</a>
+    </p>
+  </div> 
+  <div class="dropdown">
+    <p class="dropbtn">
+      <a href="index.html#container-sell">sell</a>
+    </p>
+  </div> 
+  <div class="dropdown">
+    <p class="dropbtn">
+      <a style="display:block" href="">communities</a>
+    </p>
+    <div class="dropdown-content">
+        <a href="http://prestonrichardson.agentsquared.com/search-results?Search=north+phoenix" target="_blank">north phoenix</a>
+        <a href="http://prestonrichardson.agentsquared.com/search-results?Search=central+phoenix" target="_blank">central phoenix</a>
+        <a href="http://prestonrichardson.agentsquared.com/search-results?Search=downtown+phoenix" target="_blank">downtown phoenix</a>
+        <a href="http://prestonrichardson.agentsquared.com/search-results?Search=scottsdale" target="_blank">scottsdale</a>
+        <a href="http://prestonrichardson.agentsquared.com/search-results?Search=tempe" target="_blank">tempe</a>
+        <a href="http://prestonrichardson.agentsquared.com/search-results?Search=arcadia" target="_blank">arcadia</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <p class="dropbtn">
+      <a href="my-story.html">my story</a>
+    </p>
+  </div>
+  <!--
+  <div class="dropdown">
+    <p class="dropbtn">
+      <a href="blog.html">blog</a>
+    </p>
+  </div> 
+  -->
+  <div class="dropdown">
+    <p class="dropbtn">
+      <a href="index.html#container-contact">contact</a>
+    </p>
+  </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> 
+</div>
+
+<div class="container-search">
+    <div class="text-wrapper">
+        <h1>Your Dream Home is a Click Away</h1>
+        <form onsubmit="mySearch();">
+            <input class="searchbar" type="text" id="search-query" placeholder="Search by Address, City or Zipcode">
+            <p class="advisory">*Pop-up blocker disabled</p>
+        </form>
+    </div>
+</div>
+
+<div id="container-sell">
+    <div id="text-sell">
+        <h1>Looking to Sell?</h1>
+        <h2>Ever wonder what your home is worth or what homes are going for in an area? Message me for a FREE market analysis.</h2>
+        
+        <div>
+          <a class="uppercase btn" href="mailto:prestonrichardsonrealtor@gmail.com?Subject=Home Valuation Request">request a home valuation</a>
+        </div>
+    </div>
+</div>
+
+<div class="row" id="container-meet-me">
+    <h1>Meet Me</h1>
+
+    <div class="column" id="container-img-meet-me">   
+      <img  id="img-meetme" src="images/preston-blue.jpg">
+    </div>
+
+    <div class="column">
+          <h1>Preston Richardson</h1>
+          <p>Realtor</p>
+          <br>
+          <p>Hello, I am Preston! I am a realtor in the Valley of the Sun in Phoenix, Arizona. I can help you buy, sell, or rent your next home anywhere in the valley. Becoming a realtor doesn't have a roadmap to it's profession. I pursued my bachelor's degree to become a teacher and continued on to receive my masters in college administration. I have always enjoyed helping people be the best they can be.</p>
+          <a class="uppercase btn" href="my-story.html">my story</a>
+          <a class="uppercase btn" href="index.html#container-contact">contact</a>
+    </div>
+</div>
+
+<div class="container-insta">
+  <!-- SnapWidget -->
+    <a class="color-black" target="_blank" href="https://www.instagram.com/prestonrichardsonrealtor/"><h1>Find Me on Instagram</h1></a>
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+    <iframe src="https://snapwidget.com/embed/711972" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; width:100%; "></iframe>
+</div>
+
+<div class="row" id="container-contact">
+  
+    <h1>Contact</h1>
+    <div class="column contact-info">
+        <div>
+            <p><i class="fas fa-directions"></i> 8360 E Raintree Drive, Scottsdale, AZ, 85260</p>
+            <br>
+            <p><i class="fas fa-phone"></i> Phone: (317) 586-0334</p>
+            <br>
+            <p><i class="fas fa-envelope"></i><a href="mailto:prestonrichardsonrealtor@gmail.com"> Email: prestonrichardsonrealtor@gmail.com</a></p> 
+        </div>
+    </div>
+
+    <div class="column form">
+	<h1>Contact Form</h1>      
+	<h1>Coming Soon</h1>
+	<!--
+        <form method="post">
+            <p>first name*</p>
+            <input type="text" name="first-name">
+            <p>last name*</p>
+            <input type="text" name="last-name">
+            <p>email*</p>
+            <input type="text" name="email">
+            <p>subject*</p>
+            <input type="text" name="subject">
+            <p>message*</p>
+            <textarea name="message"></textarea>
+            <button class="btn" type="submit" name="sendmail">submit</button>
+        </form>
+      -->
+    </div>
+</div>
+
+</body>
+
+<footer>
+  <div class="row">
+    <div class="column" id="container-quicklinks">
+      <p>Quick Links</p>
+      <p><u><a href="http://prestonrichardson.agentsquared.com" target="_blank">Buy</a></u></p>
+      <p><u><a href="index.html#container-sell">Sell</a></u></p>
+      <p><u><a href="my-story.html">My Story</a></u></p>
+      <!--<p><u><a href="blog.html">Blog</a></u></p>-->
+      <p><u><a href="index.html#container-contact">Contact</a></u></p>
+    </div>  
+    <div class="column">
+      <p>My Home Group</p>
+      <p>8360 E Raintree Dr</p>
+      <p>Scottsdale, AZ, 85260</p>
+      <p>Phone: (317) 586-0334</p>
+      <p><a href="mailto:prestonrichardsonrealtor@gmail.com" target="_top">Email: prestonrichardsonrealtor@gmail.com</a></p>
+      <a class="icon-link" href="https://www.instagram.com/prestonrichardsonrealtor/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a class="icon-link" href="https://www.facebook.com/PrestonRichardsonRealtor/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a class="icon-link" href="mailto:prestonrichardsonrealtor@gmail.com"  target="_top"><i class="far fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
