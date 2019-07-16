@@ -5,22 +5,12 @@
     <title>Preston Richardson at MyHomeGroup</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
-  <?php
-    if(isset($_POST['sendmail'])) {
-      $headers = "From: webmaster@example.com";
-
-      mail('advas14@gmail.com',
-        $_POST['subject'],
-        "Dear Mr.Richardson,\n\n{$_POST['message']}\n\nSincerely,\n{$_POST['first-name']} {$_POST['last-name']}\n{$_POST['email']}");
-    }       
-  ?>
 
     <div class="topnav" id="myTopnav">
   <a href="index.html" class="active"><img class="img-logo-mhg" alt="MyHomeGroup"src="images/mhg.png"></a> 
@@ -88,10 +78,10 @@
     </div>
 </div>
 
-<div class="row" id="container-meet-me">
+<div class="row" id="container-meetme">
     <h1>Meet Me</h1>
 
-    <div class="column" id="container-img-meet-me">   
+    <div class="column" id="container-img-meetme">   
       <img  id="img-meetme" src="images/preston-blue.jpg">
     </div>
 
@@ -126,25 +116,23 @@
     </div>
 
     <div class="column form">
-	<h1>Contact Form</h1>      
-	<h1>Coming Soon</h1>
-	<!--
-        <form method="post">
-            <p>first name*</p>
-            <input type="text" name="first-name">
-            <p>last name*</p>
-            <input type="text" name="last-name">
-            <p>email*</p>
-            <input type="text" name="email">
-            <p>subject*</p>
-            <input type="text" name="subject">
-            <p>message*</p>
-            <textarea name="message"></textarea>
-            <button class="btn" type="submit" name="sendmail">submit</button>
+        <form id="contact-form">
+            <p>first name</p>
+            <input type="text" name="first-name" id="first-name">
+            <p>last name</p>
+            <input type="text" name="last-name" id="last-name">
+            <p>email</p>
+            <input type="email" name="email" id="email">
+            <p>message</p>
+            <textarea type="text" name="message" id="message"></textarea>
+            <button class="btn" type="submit">submit</button>
         </form>
-      -->
+        <div class="alert">Submitted</div>
     </div>
 </div>
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="script.js"></script>
 
 </body>
 
@@ -170,4 +158,3 @@
     </div>
   </div>
 </footer>
-
