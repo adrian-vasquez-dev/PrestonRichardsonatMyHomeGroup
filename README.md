@@ -10,7 +10,7 @@ or
 
 Download project folder and click on index.html file to start up website 
 
-See screenshots or MP4 Files for video demo
+Open Demo folder for video demo and screenshots
 
 #Prerequisites
 
