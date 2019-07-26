@@ -1,5 +1,3 @@
-
-<!-- saved from url=(0014)about:internet -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +18,7 @@
     <meta id="myViewport" name="viewport" content="width=device-width"/>    
 </head>
 
-<body>
-    <nav class="topnav" id="myTopnav">
+  <nav class="topnav" id="myTopnav">
     <a href="index.html" class="active"><img class="img-logo-mhg" alt="MyHomeGroup logo"src="images/mhg.png" title="PrestonRichardsonRealtor Home"></a> 
     <div class="dropdown">
       <p class="dropbtn">
@@ -48,85 +45,41 @@
     </div>
     <div class="dropdown">
       <p class="dropbtn">
-        <a href="contact.html" title="Contact">contact</a>
+        <a href="contact.html" title="Contact"><u>contact</u></a>
       </p>
     </div>
-      <a href="javascript:void(0);" class="icon" alt="menu button" onclick="myFunction()">&#9776;</a> 
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> 
   </nav>
 
-<div class="container-search">
-    <div class="text-wrapper">
-        <h1>Your Dream Home is a Click Away</h1>
-        <form onsubmit="mySearch();">
-            <input class="searchbar" type="text" id="search-query" placeholder="Search by Address, City or Zipcode">
-            <p class="advisory">*Pop-up blocker disabled</p>
-        </form>
-    </div>
-</div>
+<body>  
+  <div class="row" id="container-contact">
+    
+      <h1>Contact</h1>
+      <div class="column contact-info">
+          <div>
+              <p><i class="fas fa-directions fa-fw" ></i>8360 E Raintree Drive, Scottsdale, AZ, 85260</p>
+              <br>
+              <p><i class="fas fa-phone fa-fw"></i>Phone: (317) 586-0334</p>
+              <br>
+              <p><i class="fas fa-envelope fa-fw"></i><a href="mailto:prestonrichardsonrealtor@gmail.com" style="display: inline-block;">Email: prestonrichardsonrealtor@gmail.com</a></p> 
+          </div>
+      </div>
 
-<div id="container-sell">
-    <div id="text-sell">
-        <h1>Looking to Sell?</h1>
-        <h2>Ever wonder what your home is worth or what homes are going for in an area? Message me for a FREE market analysis.</h2>
-        
-        <div>
-          <a class="uppercase btn" href="mailto:prestonrichardsonrealtor@gmail.com?Subject=Home Valuation Request" title="Request A Home Valuation">request a home valuation</a>
-        </div>
-    </div>
-</div>
-
-<div class="row" id="container-meetme">
-    <h1>Meet Me</h1>
-
-    <div class="column" id="container-img-meetme">   
-      <img id="img-meetme" alt="professional headshot of Preston Richardson" src="images/preston-blue.jpg">
-    </div>
-
-    <div class="column">
-          <h1>Preston Richardson</h1>
-          <p>Realtor</p>
-          <br>
-          <p>Hello, I am Preston! I am a realtor in the Valley of the Sun in Phoenix, Arizona. I can help you buy, sell, or rent your next home anywhere in the valley. Becoming a realtor doesn't have a roadmap to it's profession. I pursued my bachelor's degree to become a teacher and continued on to receive my masters in college administration. I have always enjoyed helping people be the best they can be.</p>
-          <a class="uppercase btn" href="my-story.html" title="My Story">my story</a>
-          <a class="uppercase btn" href="contact.html" title="Contact">contact</a>
-    </div>
-</div>
-
-<div class="container-insta">
-  <!-- SnapWidget -->
-    <a class="color-black" target="_blank" href="https://www.instagram.com/prestonrichardsonrealtor/" title="PrestonRichardsonRealtor Instagram"><h1>Find Me on Instagram</h1></a>
-    <script src="https://snapwidget.com/js/snapwidget.js"></script>
-    <iframe src="https://snapwidget.com/embed/711972" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; width:100%; "></iframe>
-</div>
-
-<div class="row" id="container-contact">
-  
-    <h1>Contact</h1>
-    <div class="column contact-info">
-        <div>
-            <p><i class="fas fa-directions fa-fw"></i>8360 E Raintree Drive, Scottsdale, AZ, 85260</p>
-            <br>
-            <p><i class="fas fa-phone fa-fw"></i>Phone: (317) 586-0334</p>
-            <br>
-            <p><i class="fas fa-envelope fa-fw"> </i><a style="display: inline-block;" href="mailto:prestonrichardsonrealtor@gmail.com">Email: prestonrichardsonrealtor@gmail.com</a></p> 
-        </div>
-    </div>
-
-    <div class="column form">
-        <form id="contact-form">
-            <label for="first-name">first name</label>
-            <input type="text" name="first-name" id="first-name">
-            <label for="last-name">last name</label>
-            <input type="text" name="last-name" id="last-name">
-            <label for="email">email</label>
-            <input type="email" name="email" id="email">
-            <label for="message">message</label>
-            <textarea type="text" name="message" id="message"></textarea>
-            <button class="btn" type="submit">submit</button>
-        </form>
-        <div class="alert">Submitted</div>
-    </div>
-</div>
+      <div class="column form">
+          <form id="contact-form">
+              <label for="first-name">first name</label>
+              <input type="text" name="first-name" id="first-name">
+              <label for="last-name">last name</label>
+              <input type="text" name="last-name" id="last-name">
+              <label for="email">email</label>
+              <input type="email" name="email" id="email">
+              <label for="message">message</label>
+              <textarea type="text" name="message" id="message"></textarea>
+              <button class="btn" type="submit">submit</button>
+          </form>
+          <div class="alert">Submitted</div>
+      </div>
+  </div>
 
 <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
 <script src="script.js"></script>

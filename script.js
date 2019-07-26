@@ -1,12 +1,12 @@
 /* Contact Form */
 var firebaseConfig = {
-	apiKey: "xxx-omitted-xxx",
-	authDomain: "xxx-omitted-xxx",
-	databaseURL: "xxx-omitted-xxx",
-	projectId: "xxx-omitted-xxx",
+	apiKey: "AIzaSyD-8WDm4yt5p6b-OkI8eoTpBKAnVrW4U-w",
+	authDomain: "prestonrichardsonrealtoratmhg.firebaseapp.com",
+	databaseURL: "https://prestonrichardsonrealtoratmhg.firebaseio.com",
+	projectId: "prestonrichardsonrealtoratmhg",
 	storageBucket: "",
-	messagingSenderId: "xxx-omitted-xxx",
-	appId: "xxx-omitted-xxx"
+	messagingSenderId: "1048827168625",
+	appId: "1:1048827168625:web:05166d98f80fdb8d"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
